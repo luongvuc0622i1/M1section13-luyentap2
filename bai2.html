@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+  let a = ['c','s','c','2','6','1'];
+  let first =0;
+  let last = a.length - 1;
+  while (first < last) {
+        let x = a[first];
+        a[first] = a[last];
+        a[last] = x;
+        first++;
+        last--
+  }
+  let result = "";
+  for (let value of a) {
+      result = result + value
+  }
+  document.write(result);
+
+</script>
+</body>
+</html>
