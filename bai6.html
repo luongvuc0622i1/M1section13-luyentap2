@@ -12,9 +12,9 @@
   }
   document.write("Mảng nhập vào đầu tiên là: " + arr);
   document.write("<br>" + "<br>" + "<hr>" + "<br>");
-  for (let value of arr) {
-    if (value === "-") {
-      value = "_";
+  for (let i=0; i<arr.length;i++) {
+    if (arr[i] == "-") {
+      arr[i] = "_";
     }
   }
   document.write("Mảng sau khi sửa: " + arr);
