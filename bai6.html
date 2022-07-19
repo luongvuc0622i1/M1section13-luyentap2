@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 6</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  for (let i=0; i<10; i++) {
+    arr[i] = prompt("Nhập vào đây giá trị  thứ " +(i+1)+ " của mảng.")
+  }
+  document.write("Mảng nhập vào đầu tiên là: " + arr);
+  document.write("<br>" + "<br>" + "<hr>" + "<br>");
+  for (let value of arr) {
+    if (value === "-") {
+      value = "_";
+    }
+  }
+  document.write("Mảng sau khi sửa: " + arr);
+</script>
+</body>
+</html>
